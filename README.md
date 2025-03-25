@@ -10,7 +10,7 @@ Grupo Integrantes SI 3A NOITE
 | A       | Akira Ogassavara   | 2401977    |
 | A        | Amanda Costa  | 2401562    |
 | F       | Fanthine Souza  | 2401012     |
-| M       | Mauricio Costa  | 400487   |
+| M       | Mauricio Costa  | 2400487   |
 | T       | Thiago Lopes   | 2401113    |
 
 
