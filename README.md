@@ -15,20 +15,24 @@ Grupo Integrantes SI 3A NOITE
 
 
 
-Tema do grupo:
+### Tema do grupo:
 
 🌤️ Site interativo de previsão do tempo/clima
 
 
-Objetivo do grupo:
+### Objetivo do grupo:
 
 🌈 Criar um canal de comunicação com o usuário que o informe sobre o clima atual e dos próximos dias de uma forma clara, interativa e visualmente agradável.
 
 
-Ferramentas:
+### Ferramentas:
 
 🖥️ VisualCode (Compilador) <br>
 🌐 Linguagem HTML (Criação da página) <br>
 🎨 Linguagem CSS (Estilo e visual da página) <br>
 💻 Linguagem JavaScript (Integrações, interações e configurações) <br>
 ☔ API de Clima/Previsão de tempo
+
+### Organização das Tarefas:
+
+📋 Organizamos o que cada um ia fazer no Trello. Você pode acessar o projeto [aqui](https://trello.com/b/wJDgkpUK/aafmt).
