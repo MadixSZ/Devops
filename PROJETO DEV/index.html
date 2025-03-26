@@ -1,51 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClimaAAFMT</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen"/>
 </head>
+
 <body>
-    <header>
-      <div class="headerPrincipal">
-        <a href="" class="navLogo">
-            <img src="./img/testeimg.JPG" alt="Logo" />
-        </a>
-        <nav class="navNavegar">
-            <a href="index.html">Início</a>
-            <a href="">Página 2</a>
-            <a href="">Página 3</a>
-        </nav>
+    <!-- Início Topo -->
+    <header class="topo">
+        <h1 class="logo">AAFTM</h1>
+        <ul id="navegacao">
+            <li class="primeiro"><a id="home" href="index.html">Home |</a></li>
+            <li><a id="pg2" href="pg2.html">Página 2  |</a></li>
+            <li><a id="pg3" href="pg3.html">Página 3 |</a></li>
+        </ul>
         <nav class="navUsuario">
-            <a href="view/login.html">Login</a>
+            <a href="view/login.html">Login |</a>
             <a href="view/cadastro.html">Cadastre-se</a>
         </nav>
-    </div>
-        <div class="container">
-            <div class="form">
-              <h3>Confira o clima de uma cidade:</h3>
-              <div class="form-input-container">
-                <input
-                type="text"
-                placeholder="Digite o nome da cidade"
-                id="city-input"
-              /> <button id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-              </div>
-            </div>
-        <h1>Clima AAFMT</h1>
-        <img src="" alt="">
-        <ul>
-            <li> Sobre AAFMT </li>
-        </ul>
     </header>
-    <main>
-        <section> 
-            <img:
-            <h2> Seja bem-vindo ao nosso site, se prepare para um dia mais organizado. </h2>
-        </section>
-    </main> 
+    <!-- Fim Topo -->
+
+    <!-- Início Conteúdo -->
+    <div class="container">
+        <div class="form">
+            <h3> <b>Confira o clima de uma cidade:</B></h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade" id="city-input"/>
+                <button id="search">
+                    <img id="lupa" class="lupa" src="imagens/home/lupa.png" alt="lupa">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Conteúdo -->
 </body>
+
 </html>
