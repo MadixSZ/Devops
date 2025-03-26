@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 800em;
+}
+
+/* Topo */
+
+body {
+    background: url(../imagens/home/gif.gif) no-repeat center center; 
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+    opacity: 9.1;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 250px;
+    height: 120px;
+    padding: 5px;
+    margin-left: -10px;
+    background: url(../imagens/home/logoAmorzinho.png) no-repeat center / contain;
+    text-indent: -3000px;
+    overflow: hidden;
+    display: block;
+}
+
+#navegacao {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding: 0;
+    margin-left: -120px;
+}
+
+#navUsuario {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    padding: 1.5px;
+    font-size: 1.5rem; 
+    font-weight: 250; 
+    color: white;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: white;
+    padding: 2px;
+}
+
+a:hover {
+    color: white
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../imagens/home/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+
+
+/* Conteúdo */
+
+h3 {
+    font-size: 2rem; 
+    font-weight: 900; 
+    color: white;
+    text-align: center;
+}
+
+.container {
+    color: #777;
+    background-size: cover; 
+    min-height: 100vh; 
+    height: auto; 
+    background-position: center; 
+    padding: 50px 80px;
+}
+
+.form-input-container {
+    display: flex;
+    align-items: center; 
+}
+
+input {
+    height: 35px; 
+    padding: 0 10px;
+    font-size: 1rem; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1; 
+}
+
+#search {
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px; 
+}
+
+#search img.lupa {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle; 
+}
+
