@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container { 
+    width: 100%;
+    height: 100hv;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    background-image: url('../img/fundo.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.form {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+
+}
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: #1e2b3d;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.login-button button{
+    border: none;
+    background-color: #f6a25d;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #cf7560;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #1e2b3d;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #1e2b3d;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #1e2b3d;
+}
+.input-box input:hover {
+    background-color: #d9d9d9;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #1e2b3d;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #1e2b3d;
+}
+
+.input-box input::placeholder {
+    color: #f6a25d;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #1e2b3d;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #f6a25d;
+    padding: 0.65rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #1e2b3d;
+}
+
+.continue-button button:hover {
+    background-color: #cf7560;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #cf7560;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px){
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #1e2b3d;
+    color: #cf7560;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .line-footer1 {
+    text-align: center;
+    border-bottom: 2px solid #cf7560;
+    padding-bottom: 40px;
+    margin-top: auto;
+}
+
+.line-footer1 h2{
+    font-size: 1.5rem;
+}
+
+.line-footer1 p{
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
+}
+
+.line-footer1 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-footer1 form input[type=email]{
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #cf7560;
+    color: #cf7560;
+    padding: 10px;
+    outline: 0;
+
+}
+
+
+.line-footer1 form input[type=submit]{  
+    width: 80px;
+    height: 40px;
+    background-color: #f6a25d;
+    border: 0;
+    color: #1e2b3d;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+.line-footer1 form input[type=submit]:hover{
+    background-color: #cf7560;
+    color: #1e2b3d;
+
+}
+
+footer .line-footer2{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cf7560;
+}
+
+footer .line-footer2 .box-line-footer{
+    max-width: calc(100% / 5);
+
+}
+
+footer .box-line-footer img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.line-footer2 .box-line-footer h3{
+    color: #cf7560;
+    margin-bottom: 20px;
+}
+
+.line-footer2 .box-line-footer a{
+    color: #cf7560;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.box-line-footer .btn-redes a{
+    display: inline;
+}
+
+.box-line-footer .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid #cf7560;
+    color: #cf7560;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.box-line-footer .btn-redes button:hover{
+    background-color: #f6a25d;
+    border-color: #f6a25d;
+
+}
+
+footer .line-footer3{
+    padding-top: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #footer {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer {
+        grid-template-columns: repeat(1,1fr);
+        padding: 3rem 2rem;
+    }
+}
