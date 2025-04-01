@@ -2,11 +2,10 @@
 
 // Função principal para buscar dados da API
 async function buscarDadosClima(latitude, longitude) {
-    try {
-      // Chamada à API (ajustar os parâmetros depois)
-      const resposta = await fetch(
-        `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relativehumidity_2m&daily=weathercode,temperature_2m_max&current_weather=true&timezone=auto`
-      );
+  try {
+    const resposta = await fetch(
+      `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&daily=weathercode,temperature_2m_max,temperature_2m_min&current_weather=true&timezone=auto`
+    );
   
       if (!resposta.ok) {
         throw new Error(`Erro HTTP: ${resposta.status}`);
@@ -53,6 +52,30 @@ async function buscarDadosClima(latitude, longitude) {
     });
   }
   
+  // Função para previsão dos próximos 7 dias
+  function processarPrevisao7Dias(dados) {
+    return dados.daily.time.map((dia, index) => ({
+      data: new Date(dia).toLocaleDateString("pt-BR", { weekday: "short", day: "numeric" }),
+      tempMax: dados.daily.temperature_2m_max[index],
+      tempMin: dados.daily.temperature_2m_min[index],
+      weathercode: dados.daily.weathercode[index],
+    }));
+  }
+
+  // Função para previsão das próximas 24 horas
+  function processarProximas24Horas(dados) {
+    const agora = new Date();
+    const horas = dados.hourly.time
+      .map((hora, index) => ({
+        hora: new Date(hora).toLocaleTimeString("pt-BR", { hour: "2-digit" }),
+        temperatura: dados.hourly.temperature_2m[index],
+      }))
+      .filter((item) => new Date(item.hora) >= agora) // Filtra horas futuras
+      .slice(0, 24); // Pega as próximas 24h
+  
+    return horas;
+  }
+
   // Inicialização do app
   async function init() {
     try {
