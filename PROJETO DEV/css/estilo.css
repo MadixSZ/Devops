@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: 800em;
+    font-weight: 800;
 }
-
-/* Topo */
 
 body {
     background: url(../imagens/home/gif.gif) no-repeat center center; 
@@ -22,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     padding: 3px 15px;
-    opacity: 9.1;
+    opacity: 0.9;
     justify-content: space-between;
 }
 
@@ -64,7 +62,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: white
+    color: white;
 }
 
 #topo ul a {
@@ -84,10 +82,6 @@ a:hover {
 #topo ul a:hover {
     color: #69001d;
 }
-
-
-
-/* Conteúdo */
 
 h3 {
     font-size: 2rem; 
@@ -135,3 +129,110 @@ input {
     vertical-align: middle; 
 }
 
+.clima-info {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 30px;
+    backdrop-filter: blur(8px);
+}
+
+#clima-atual {
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.horas-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+}
+
+.hora-item {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 15px;
+    min-width: 80px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.hora-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.dias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+}
+
+.dia-item {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.dia-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.weather-icon {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.proximas-horas h3, 
+.previsao-7dias h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.proximas-horas h3::after,
+.previsao-7dias h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .dias-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .hora-item {
+        min-width: 70px;
+        padding: 12px;
+    }
+
+    .weather-icon {
+        font-size: 2rem;
+    }
+}

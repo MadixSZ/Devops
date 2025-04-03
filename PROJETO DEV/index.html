@@ -28,7 +28,7 @@
     <!-- Início Conteúdo -->
     <div class="container">
         <div class="form">
-            <h3> <b>Confira o clima de uma cidade:</B></h3>
+            <h3><b>Confira o clima de uma cidade:</b></h3>
             <div class="form-input-container">
                 <input type="text" placeholder="Digite o nome da cidade" id="city-input"/>
                 <button id="search">
@@ -36,11 +36,25 @@
                 </button>
             </div>
         </div>
-        <!-- Exibir dados de clima. Não sei se estrutura tá certa -->
+
+        <!-- Container principal de clima -->
         <div class="clima-info" id="clima-info">
+            <!-- Temperatura Atual -->
+            <div id="clima-atual"></div>
+
+            <!-- Próximas 24 Horas -->
+            <div class="proximas-horas">
+                <h3>Próximas 24 Horas</h3>
+                <div class="horas-container" id="horas-container"></div>
+            </div>
+
+            <!-- Previsão 7 Dias -->
+            <div class="previsao-7dias">
+                <h3>Previsão para 7 Dias</h3>
+                <div class="dias-container" id="dias-container"></div>
+            </div>
         </div>
     </div>
     <!-- Fim Conteúdo -->
 </body>
-
 </html>
