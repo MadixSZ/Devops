@@ -36,7 +36,7 @@ Grupo Integrantes SI 3A NOITE
 🌐 Linguagem HTML (Criação da página) <br>
 🎨 Linguagem CSS (Estilo e visual da página) <br>
 💻 Linguagem JavaScript (Integrações, interações e configurações) <br>
-☔ API de Clima/Previsão de tempo
+☔ API de Clima/Previsão de tempo/ API de Login
 
 ### Como Visualizar o Projeto
 🚀 Para visualizar o site localmente, siga os passos abaixo:
@@ -71,13 +71,17 @@ Abra o arquivo index.html diretamente no seu navegador para visualizar o site.
 │   └── estilo.css   <br>
 │── /js                       # Arquivos de scripts JavaScript<br>
 │   └── script.js  <br>
-│── /images                   # Imagens e recursos gráficos   <br>
+│   └── login.js  <br>
+│── /images                  # Imagens e recursos gráficos   <br>
+│    └── cadastro        <br>
 │    └── home        <br>
 │    └── usuario         <br>
 │── /view                     # Area do Login/Cadastro       <br>
 │    └── login.html           # Arquivo login HTML       <br>
+│    └── cadastro.html        # Arquivo cadastro HTML       <br>
 │    └── /css                 # Arquivos de estilo CSS do login  <br>
 │          └── estilo2.css    <br>
+│          └── style.css    <br>
 │           <br>
 ├── README.md                 # Esse arquivo
            
